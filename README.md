@@ -37,13 +37,4 @@ This is a personal blog created to share my journey of becoming a **Neo4j Certif
 
 ---
 
-## 📬 Contact Me
-
-Feel free to connect or reach out:
-
-- **GitHub**: [https://github.com/Nikit-370](https://github.com/Nikit-370)
-- **Email**: *your-email@example.com*
-
----
-
 > Built with passion for graphs, data, and clean code 🧠💻
