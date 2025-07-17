@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-color: #f9f9fb;
+    color: #2c3e50;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #0b7285;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #087f5b;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ced4da;
+    padding-bottom: 4px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+ul,
+ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+strong {
+    color: #1d3557;
+}
+
+em {
+    color: #495057;
+}
+
+a {
+    color: #1c7ed6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background-color: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+}
+
+pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    border-left: 4px solid #adb5bd;
+    margin-bottom: 20px;
+}
+
+pre code {
+    font-size: 0.95em;
+    color: #212529;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark h1 {
+    color: #4dd0e1;
+}
+
+body.dark h2 {
+    color: #80cbc4;
+    border-bottom: 2px solid #333;
+}
+
+body.dark strong {
+    color: #bb86fc;
+}
+
+body.dark em {
+    color: #b0bec5;
+}
+
+body.dark a {
+    color: #82aaff;
+}
+
+body.dark code {
+    background-color: #1e1e1e;
+    color: #c3f3c3;
+}
+
+body.dark pre {
+    background-color: #1f1f1f;
+    border-left: 4px solid #444;
+}
+
+body.dark pre code {
+    color: #d1d1d1;
+}
+
+/* Theme Toggle Button */
+.toggle-theme {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: #dee2e6;
+    color: #212529;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark .toggle-theme {
+    background-color: #333;
+    color: #f1f1f1;
+}

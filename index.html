@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Neo4j Certified Professional Blog by Nikit Singh Kanyal" />
+    <meta name="description"
+        content="Explore my journey through Neo4j certifications, including Graph Data Modeling, Cypher, Python integration, and more." />
+    <meta name="keywords"
+        content="Neo4j, Graph Database, Cypher, GraphAcademy, Certification, Blog, Python, Data Science, Graph Data Modeling" />
+    <meta name="author" content="Nikit Singh Kanyal" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nikit-370.github.io/neo4j-blog/" />
+    <meta property="og:title" content="Neo4j Certified Blog | Nikit Singh Kanyal" />
+    <meta property="og:description"
+        content="Certified by Neo4j GraphAcademy, I share my hands-on experience with Neo4j technologies and use cases." />
+    <meta property="og:image" content="https://graphacademy.neo4j.com/favicon-194x194.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Neo4j Certified Blog | Nikit Singh Kanyal" />
+    <meta name="twitter:description"
+        content="Certified by Neo4j GraphAcademy, I share my hands-on experience with Neo4j technologies and use cases." />
+    <meta name="twitter:image" content="https://graphacademy.neo4j.com/favicon-194x194.png" />
+    <title>Neo4j Certified Blog | Nikit Singh Kanyal</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <button class="toggle-theme">🌓 Toggle Theme</button>
+
+    <main>
+        <header>
+            <h1>📍 My Neo4j Certification Journey</h1>
+            <p>by <strong>Nikit Singh Kanyal</strong> | <em>Neo4j Certified Professional</em></p>
+        </header>
+
+        <section>
+            <p>Hey there! 👋</p>
+            <p>
+                I recently earned my Neo4j Certified Professional badge — and what a fun ride it's been! From diving
+                into graph data modeling to writing Cypher queries that actually *felt* like English, it was an
+                eye-opener into how data can be visualized and connected. This blog highlights key learnings, practical
+                examples, and how Neo4j is shaping my view of modern data systems.
+            </p>
+        </section>
+
+        <section>
+            <h2>🌐 Why Graph Databases?</h2>
+            <p>
+                Traditional databases are great at storing rows and columns, but they often fall short when you want to
+                understand relationships — like which users follow each other or how entities are linked. That’s where
+                Neo4j and graph databases shine.
+            </p>
+            <p>Think of it like a web of knowledge: nodes are entities and relationships define how they connect.</p>
+        </section>
+
+        <section>
+            <h2>📚 What the Certification Covers</h2>
+            <ul>
+                <li>Concepts: Nodes, Relationships, Labels, and Properties</li>
+                <li>Cypher syntax for querying and data manipulation</li>
+                <li>Data modeling best practices using real-life scenarios</li>
+                <li>Graph imports using CSV and Neo4j Desktop tools</li>
+                <li>Visualizing data via Neo4j Browser and Bloom</li>
+                <li>Python integration using the Neo4j Bolt Driver</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🧠 Hands-On Examples</h2>
+            <p>I built a movie database that allowed me to:</p>
+            <ul>
+                <li>Find co-actors using pattern matching</li>
+                <li>Track actor-director collaborations</li>
+                <li>Visualize genres and rating connections</li>
+            </ul>
+
+            <pre><code>// Find actors who worked with Keanu Reeves
+MATCH (a:Actor)-[:ACTED_IN]->(:Movie)<-[:ACTED_IN]-(coActor:Actor {name: "Keanu Reeves"})
+RETURN DISTINCT a.name
+</code></pre>
+        </section>
+
+        <section>
+            <h2>🔎 What Makes Neo4j Unique?</h2>
+            <p>Some key differentiators:</p>
+            <ul>
+                <li><strong>Cypher</strong> – the SQL-like query language that’s intuitive and readable</li>
+                <li><strong>Index-free adjacency</strong> – faster traversals with connected data</li>
+                <li><strong>Developer-first tools</strong> – great docs, sandbox environments, and integrations</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🚀 Where Can You Use It?</h2>
+            <p>Real-world applications of graph databases:</p>
+            <ul>
+                <li><strong>Recommendation Systems</strong> – like Netflix or Spotify’s "You May Also Like"</li>
+                <li><strong>Fraud Detection</strong> – identifying suspicious connections in finance</li>
+                <li><strong>Knowledge Graphs</strong> – connecting unstructured data for enterprises</li>
+                <li><strong>Supply Chain Analysis</strong> – tracking dependencies and delays</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🛠️ Tools I Used</h2>
+            <ul>
+                <li>
+                    <a href="https://neo4j.com/download/" target="_blank">Neo4j Desktop</a>
+                </li>
+                <li>
+                    <a href="https://neo4j.com/docs/operations-manual/current/tools/cypher-shell/"
+                        target="_blank">Cypher Shell</a>
+                </li>
+                <li>
+                    <a href="https://pypi.org/project/neo4j/" target="_blank">Python Jupyter Notebook +
+                        <code>neo4j</code> package</a>
+                </li>
+                <li>
+                    <a href="https://graphacademy.neo4j.com/" target="_blank">GraphAcademy learning platform</a> (highly
+                    recommended!)
+                </li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>📈 What’s Next?</h2>
+            <p>
+                I plan to explore more advanced topics like Graph Data Science (GDS), Neo4j Bloom, and building a
+                Flask-based web app powered by Neo4j.
+            </p>
+            <p>Stay tuned—I'll post follow-ups on GitHub and LinkedIn!</p>
+        </section>
+
+        <section>
+            <h2>🎓 Final Thoughts</h2>
+            <p>
+                Honestly, I went in just curious — and came out with a deeper appreciation for connected data. I highly
+                recommend this certification for devs, analysts, or anyone working with relationships in data.
+            </p>
+        </section>
+
+        <footer>
+            <p>Thanks for stopping by! Feel free to connect with me on <a href="https://github.com/Nikit-370"
+                    target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/nikit-kanyal/"
+                    target="_blank">LinkedIn</a>.</p>
+            <p>– Nikit 👨‍💻</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
